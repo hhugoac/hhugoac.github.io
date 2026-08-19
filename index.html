@@ -1,15 +1,221 @@
----
-layout: default
-title: My Personal Page
-show_downloads:false
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        /* Hacker Theme Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<div class="wrapper">
-  <h1>Welcome to My Website!</h1>
-  <p>This page is hosted completely free on GitHub Pages.</p>
-  
-  <nav>
-  <a href="/about.html">About Me</a> | 
-  <a href="/">Home</a>
-</nav>
-</div>
+        body {
+            background: #0a0a0a;
+            color: #00ff00;
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+            background: #0d0d0d;
+            border: 1px solid #00ff00;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.1);
+        }
+
+        header {
+            border-bottom: 2px solid #00ff00;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #00ff00;
+            text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+            letter-spacing: 2px;
+        }
+
+        h2, h3 {
+            color: #00ff00;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-left: 3px solid #00ff00;
+            padding-left: 15px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+        }
+
+        h3 {
+            font-size: 1.3em;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #b3ffb3;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        ul li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+            color: #b3ffb3;
+        }
+
+        ul li::before {
+            content: ">";
+            position: absolute;
+            left: 0;
+            color: #00ff00;
+            font-weight: bold;
+        }
+
+        a {
+            color: #00ff00;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: #00cc00;
+            border-bottom-color: #00ff00;
+            text-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #00ff00;
+            margin: 30px 0;
+            opacity: 0.3;
+        }
+
+        em {
+            color: #00ff00;
+            font-style: italic;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: 1px solid #00ff00;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: #00ff00;
+            color: #0a0a0a;
+            text-shadow: none;
+        }
+
+        /* Glitch effect for header */
+        @keyframes glitch {
+            0% { text-shadow: 0 0 10px #00ff00; }
+            50% { text-shadow: 0 0 20px #00ff00, 0 0 40px #00ff00; }
+            100% { text-shadow: 0 0 10px #00ff00; }
+        }
+
+        .glitch {
+            animation: glitch 2s infinite;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .wrapper {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1 class="glitch">About Me</h1>
+            <p style="color: #66ff66;">Get to know the person behind the code</p>
+        </header>
+
+        <section>
+            <h2>👋 Hi, I'm [Your Name]</h2>
+            <p>Welcome to my personal corner of the internet. I'm a passionate developer, problem-solver, and lifelong learner.</p>
+            
+            <h3>📚 My Background</h3>
+            <p>I've been working in tech for [X] years, specializing in:</p>
+            <ul>
+                <li><strong>Web Development</strong> - HTML, CSS, JavaScript, React</li>
+                <li><strong>Backend Technologies</strong> - Python, Node.js, Databases</li>
+                <li><strong>DevOps</strong> - Docker, CI/CD, Cloud Platforms</li>
+            </ul>
+
+            <h3>💼 What I'm Currently Working On</h3>
+            <ul>
+                <li>Building open-source projects</li>
+                <li>Contributing to the developer community</li>
+                <li>Learning new technologies and frameworks</li>
+            </ul>
+
+            <h3>🎯 My Goals</h3>
+            <ul>
+                <li>Create useful tools that solve real problems</li>
+                <li>Share knowledge through blogging and mentoring</li>
+                <li>Build a portfolio of meaningful projects</li>
+            </ul>
+
+            <h3>📫 Connect With Me</h3>
+            <ul>
+                <li><a href="https://github.com/yourusername">GitHub</a></li>
+                <li><a href="https://linkedin.com/in/yourusername">LinkedIn</a></li>
+                <li><a href="mailto:youremail@example.com">Email</a></li>
+                <li><a href="https://twitter.com/yourusername">Twitter/X</a></li>
+            </ul>
+
+            <h3>🛠️ Technologies I Work With</h3>
+            <ul>
+                <li>Languages: JavaScript, Python, Java, C++</li>
+                <li>Frameworks: React, Node.js, Django, Flask</li>
+                <li>Tools: Git, VS Code, Docker, Linux</li>
+                <li>Databases: PostgreSQL, MongoDB, MySQL</li>
+            </ul>
+
+            <h3>📖 Fun Facts</h3>
+            <ul>
+                <li>I love solving puzzles and coding challenges</li>
+                <li>I'm a coffee enthusiast ☕</li>
+                <li>I enjoy contributing to open-source projects</li>
+                <li>I believe in lifelong learning and continuous improvement</li>
+            </ul>
+
+            <hr>
+
+            <p><em>"Code is poetry, and I'm here to write beautiful verses."</em></p>
+            
+            <a href="/" class="back-link">← Back to Home</a>
+        </section>
+    </div>
+</body>
+</html>
